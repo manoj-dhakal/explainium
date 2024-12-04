@@ -45,6 +45,10 @@ Want to help make **Explainium** even more awesome? We love pull requests! 💕 
 3. Submit a pull request. We’ll be sure to give you some kudos! 🎉
 
 ---
+## Video
+
+More about explainium in this video: 
+https://youtu.be/TrCvHbBmmzA?si=ejSqGSLOZwi0G_HA
 
 ## 📬 Contact
 
