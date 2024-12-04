@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="extension-panel">
+        <h1>Explainium</h1>
+        <p id="mode-text">Your tool to explain things like you're five!</p>
+        <div class="output">
+          <div id="response" class="text" hidden></div>
+          <div id="loading" class="text" hidden><span class="blink">Processing...</span></div>
+          <div id="error" class="text error" hidden></div>
+        </div>
+        <button id="toggle-settings">Settings</button>
+        <button id="toggle-theme">Toggle Dark/Light Mode</button>
+      </div>
+      <div class="settings-panel" id="settings-panel" hidden>
+        <h2>Settings</h2>
+        <div class="setting">
+          <label for="temperature">Temperature:</label>
+          <input
+            type="range"
+            id="temperature"
+            name="temperature"
+            min="0"
+            max="2"
+            step="0.01"
+          />
+          <span id="label-temperature"></span>
+        </div>
+        <div class="setting">
+          <label for="top-k">Top-k:</label>
+          <input
+            type="range"
+            id="top-k"
+            name="top-k"
+            min="1"
+            max="8"
+            step="1"
+          />
+          <span id="label-top-k"></span>
+        </div>
+        <div class="setting">
+          <label>Mode:</label>
+          <input type="radio" id="mode-eli5" name="mode" value="eli5" checked />
+          <label for="mode-eli5">ELI5</label>
+          <input type="radio" id="mode-pro" name="mode" value="pro" />
+          <label for="mode-pro">Pro</label>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
